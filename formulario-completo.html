@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery.min.js" ></script>
+    <link rel="stylesheet" href="assets/css/pikaday.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
+
+    <title>formulario</title>
+</head>
+<body class="body">
+
+    <div class="container-formularios" id="ContainerFormularios" >
+
+                <section class="forms-container forms-container-datos" id="DatosPersonales">
+            
+                    <div class="steps text-align-center">
+                        <span class="span spanActive"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="header-container">
+                        <div class="header-form ">
+                                <h2 class="bold-xs anim-txt" id="test">Datos personales </h2>
+                                <p class="anim-txt">Comenzá la solicitud contandonos quién sos. Tu información está protegida.</p>
+                    </div>
+                    </div>
+            
+                    <div class="row-forms">
+                        <form class="modal-main">
+                            <div class=" input-box anim-txt">
+                                <input class="input" type="text" placeholder="John">
+                                <span class="bar"></span>
+                                <label>Nombre</label>
+                            </div>
+                            <div class=" input-box anim-txt">
+                                    <input class="input" type="text" placeholder="Doe">
+                                    <span class="bar"></span>
+                                    <label>Apellido</label>
+                            </div>
+                            <div class=" input-box anim-txt">
+                                    <input class="input" type="text" placeholder="123-4567">
+                                    <span class="bar"></span>
+                                    <label>Celular</label>
+                            </div>                                
+                            <div class="footer-form">
+                                <button id="btnComenzar" class="green-btn" >Comenzar</button>
+                            </div>                            
+                            
+                        </form>
+
+                    </div>
+            
+                </section>
+
+                <section class="forms-container forms-container-datos" id="DatosPersonalesDos">
+                        <div class="steps text-align-center">
+                                <span class="span spanActive"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                        </div>
+                        <div class="header-container">
+                            <div class="header-form ">
+                                    <h2 class="bold-xs anim-txt2">Datos personales</h2>
+                                    <p class="anim-txt2">Contanos donde podemos contactarte</p>
+                        </div>
+                        </div>
+                
+                        <form class="row-forms">
+                            <div class="modal-main modal-main-register">
+                                <div class=" input-box anim-txt2">
+                                        <label>Tipo de Cédula</label>
+                                        <div class="div-input-opciones">
+                                                <select class="input-opciones " id="ActividadEconomica">
+                                                    <option value="" >Cédula de ciudadanía</option>
+                                                    <option value="">Opción 2</option>
+                                                    <option value="">Opción 3</option>
+                                                    <option value="">Opción 4</option>
+                                                    <option value="">Opción 5</option>
+                                                    <option value="">Opción 6</option>
+                                                    <!--option value="other">Otro</option-->
+                                                </select>
+                                                <input type='text' id="other" class="hidden" />
+                                        </div>
+                                </div>
+                                <div class=" input-box anim-txt2">
+                                    <input class="input" type="text" placeholder="60 254 987">
+                                    <span class="bar"></span>
+                                    <label>Cédula</label>
+                                </div>
+                                <div>
+                                    <div class="input-box anim-txt2" >
+                                            <input class="input" type="" id="datepicker" placeholder="Día - Mes - Año">
+                                            <span class="bar"></span>
+                                            <label>Fecha de expedición de la cédula</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="radio-box d-flex flex-wrap justify-content-space-between labels-box anim-txt2" >
+                                <p class="title-forms">Situación laboral</p>
+                                    <label class="Inputcontainer Inputcontainer1">
+                                        <span>Dependiente</span>
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark">
+                                            <span class="greencheck"></span>
+                                        </span>
+                                    </label>
+    
+                                    <label class="Inputcontainer Inputcontainer2">
+                                         <span>Independiente</span>
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"><span class="greencheck"></span></span>
+                                    </label>
+
+                                    <label class="Inputcontainer Inputcontainer3">
+                                            <span>Estudiante</span>
+                                           <input type="radio" name="radio">
+                                           <span class="checkmark"><span class="greencheck"></span></span>
+                                    </label>
+    
+                                    <label class="Inputcontainer">
+                                        <span>Pensionado</span>
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"><span class="greencheck"></span></span>
+                                    </label>
+
+                                    <label class="Inputcontainer">
+                                        <span>Ama de casa</span>
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"><span class="greencheck"></span></span>
+                                    </label>   
+
+                                    <label class="Inputcontainer">
+                                        <span>Sin empleo</span>
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"><span class="greencheck"></span></span>
+                                    </label>                                      
+                                    
+                            </div>
+                            <div class="footer-form footer-form-register">
+                                    <button id="btncomenzarDos" class="green-btn" >Continuar</button>
+                            </div>  
+                            <div id="CalendarContainer"></div>                          
+                        </form>
+
+                
+                </section>
+            
+                <section class="forms-container forms-container-datos" id="DatosPersonalesTres">
+
+                    <div class="steps text-align-center">
+                            <span class="span spanActive"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                    </div>
+            
+                    <div class="header-container">
+                        <div class="header-form d-flex ">
+                            <img class="flecha-back" src="assets/img/flecha-back.svg" alt="">
+                            <div>
+                                <h2 class="bold-xs anim-txt3">Datos personales</h2>
+                                <p class="anim-txt3">Ahora sí, continuamos. Contanos con quién vivís.</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="row-forms">
+                        <div class="">
+                            <form class=" input-box radio-box">
+                                    <p class="title-forms anim-txt3">¿Cuántos hijos tienes?</p>
+                                    <div class="d-flex justify-content-space-between labels-box">
+                                        <label class="Inputcontainer anim-txt3">
+                                            <span>1</span>
+                                            <input type="radio" checked="checked" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+        
+                                        <label class="Inputcontainer anim-txt3">2
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+        
+                                        <label class="Inputcontainer anim-txt3">3
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+        
+                                        <label class="Inputcontainer anim-txt3">+4
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+
+                            </form>
+                            <div class="input-box radio-box">
+                                    <p class="title-forms anim-txt3">¿Cuántas personas dependen de vos economicamente?</p>
+                                    <form class="d-flex justify-content-space-between labels-box">
+                                            <label class="Inputcontainer anim-txt3">
+                                                <span>1</span>
+                                                <input type="radio" checked="checked" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+            
+                                            <label class="Inputcontainer anim-txt3">2
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+            
+                                            <label class="Inputcontainer anim-txt3">3
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+            
+                                            <label class="Inputcontainer anim-txt3">+4
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                         
+                                    </form>     
+                                    <div class="footer-form footer-form-register">
+                                            <button id="btnFinalizar" class="green-btn" >Finalizar</button>
+                                    </div>                                                             
+                            </div>
+                        </div>
+
+                    </div>
+            
+                </section>
+
+                <section class="forms-container forms-container-datos" id="DatosLocacion">
+            
+                        <div class="steps text-align-center">
+                            <span class="span"></span>
+                            <span class="spanActive"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+    
+                        <div class="header-container">
+                                <div class="header-form d-flex ">
+                                    <img id="" class="flecha-back" src="assets/img/flecha-back.svg" alt="">
+                                    <div>
+                                        <h2 class="bold-xs anim-txt4">Datos de locación</h2>
+                                        <p class="anim-txt4">Ahora contanos con quién vivís.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="row-forms">
+                            <form class="modal-main">
+                                <div class="input-box anim-txt4">
+                                    <input class="input" type="text" placeholder="Buscar en Google Maps">
+                                    <span class="bar"></span>
+                                    <label>Escribe tu dirección</label>
+                                </div>
+                                
+                                <div class="footer-form">
+                                    <button id="btnContinuar" class="green-btn" >Continuar</button>
+                                </div>                           
+                            </form>
+    
+                        </div>
+                
+                </section>
+                    
+                <section class="forms-container forms-container-datos" id="DatosLocacionDos">
+        
+                        <div class="steps text-align-center">
+                            <span class="span"></span>
+                            <span class="spanActive"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="header-container">
+                                <div class="header-form d-flex ">
+                                    <img class="flecha-back" src="assets/img/flecha-back.svg" alt="">
+                                    <div>
+                                        <h2 class="bold-xs anim-txt5">Datos de locación </h2>
+                                        <p class="anim-txt5">¿Hace cuánto vives allí?</p>
+                                    </div>
+                                </div>
+                        </div>             
+                        <div class="row-forms">
+                                <form class=" input-box radio-box">
+                                        <p class="title-forms anim-txt5">Escribí tu dirección</p>
+                                        <div class="labels-box">
+                                            <div class="d-flex">
+                                                <label class="Inputcontainer anim-txt5">
+                                                    <span>Meses</span>
+                                                    <input type="radio" checked="checked" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                
+                                                <label class="Inputcontainer anim-txt5">Años
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+
+                                            <div class="d-flex justify-content-space-between labels-box anim-txt5">
+                                                    <label class="Inputcontainer">
+                                                        <span>1</span>
+                                                        <input type="radio" name="radio" >
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                    
+                                                    <label class="Inputcontainer">2
+                                                        <input type="radio" name="radio" >
+                                                        <span class="checkmark"></span>
+                                                    </label>
+    
+                                                    <label class="Inputcontainer">
+                                                        <span>3</span>
+                                                        <input type="radio" name="radio" >
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                    
+                                                    <label class="Inputcontainer">+4
+                                                        <input type="radio" name="radio">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    
+                                            </div>  
+
+                                        </div>
+
+                                        <div class="form-box2 m-top-3">
+                                            <p class="title-forms  anim-txt5">¿Qué personas viven con vos?</p>
+                                            <p class="txt-preg  anim-txt5">Podes elegir más de una opción</p>
+                                            <div class="d-flex flex-wrap labels-box  anim-txt5">
+                                                <label class="Inputcontainer">
+                                                    <span>Solo</span>
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark checkmark-square"></span>
+                                                </label>
+                                                <label class="Inputcontainer margin-box">Padres
+                                                    <input type="checkbox">
+                                                    <span class="checkmark checkmark-square"></span>
+                                                </label>
+                                                <label class="Inputcontainer">
+                                                    <span>Pareja</span>
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark checkmark-square"></span>
+                                                </label>
+                                                <label class="Inputcontainer m-top-2">Hijos
+                                                    <input type="checkbox">
+                                                    <span class="checkmark checkmark-square"></span>
+                                                </label>
+                                                <label class="Inputcontainer margin-box m-top-2">Otros
+                                                    <input type="checkbox">
+                                                    <span class="checkmark checkmark-square"></span>
+                                                </label>                                                
+                                            </div> 
+                                        </div>                                           
+
+                                        <div class="footer-form">
+                                            <button id="btnContinuarDos" class="green-btn" >Continuar</button>
+                                        </div>  
+                                </form>   
+                        </div>
+                
+                </section>  
+                
+                <section class="forms-container forms-container-datos" id="DatosLocacionTres">
+        
+                        <div class="steps text-align-center">
+                            <span class="span"></span>
+                            <span class="spanActive"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+    
+                        <div class="header-container">
+                                <div class="header-form d-flex ">
+                                    <img id="" class="flecha-back" src="assets/img/flecha-back.svg" alt="">
+                                    <div>
+                                        <h2 class="bold-xs anim-txt6">Datos de locación </h2>
+                                        <p class="anim-txt6">Ahora contanos con quien vivis</p>
+                                    </div>
+                                </div>
+                        </div>                   
+                        <div class="row-forms">
+                            <form class="modal-main">
+                                <div class=" input-box anim-txt6">
+                                    <input class="input" type="text" placeholder="Bogotá">
+                                    <span class="bar"></span>
+                                    <label>Ciudad y departamento de residencia</label>
+                                </div>
+                                <div class=" input-box anim-txt6">
+                                    <input class="input" type="text" placeholder="Calle 80">
+                                    <span class="bar"></span>
+                                    <label>Dirección de residencia</label>
+                                </div>   
+                                <div class=" input-box anim-txt6">
+                                    <input class="input" type="text" placeholder="000">
+                                    <span class="bar"></span>
+                                    <label>Estrato</label>
+                                </div>                                     
+                                
+                                <div class="footer-form">
+                                    <button id="btnContinuarTres" class="green-btn" >Continuar</button>
+                                </div>                           
+                            </form>
+    
+                        </div>
+                
+                </section>                
+
+                <section class="forms-container forms-container-datos" id="DatosLaborales">
+        
+                        <div class="steps text-align-center">
+                            <span class="span"></span>
+                            <span></span>
+                            <span class="spanActive"></span>
+                            <span></span>
+                        </div>
+    
+                        <div class="header-container">
+                                <div class="header-form d-flex ">
+                                    <img id="" class="flecha-back" src="assets/img/flecha-back.svg" alt="">
+                                    <div>
+                                        <h2 class="bold-xs anim-txt7">Datos laborales </h2>
+                                        <p class="anim-txt7">Estamos en la segunda etapa del formulario</p>
+                                    </div>
+                                </div>
+                        </div> 
+                        <div class="row-forms">
+                            <form class="modal-main">
+                                <div class=" input-box anim-txt7">
+                                    <!--input class="input" type="" placeholder="Empleado"-->
+                                    <label>Actividad económica</label>
+                                    <div class="div-input-opciones">
+                                            <select class="input-opciones anim-txt7" id="ActividadEconomica">
+                                                <option value="" disabled selected>Empleado</option>
+                                                <option value="">Ocupacion 2</option>
+                                                <option value="">Ocupacion 3</option>
+                                                <!--option value="other">Otro</option-->
+                                            </select>
+                                            <input type='text' id="other" class="hidden" />
+                                    </div>
+                                </div>
+                                <div class="input-box anim-txt7">
+                                        <label class="anim-txt7">Actividad económica</label>
+                                        <div class="div-input-opciones anim-txt7">
+                                                <select class="input-opciones">
+                                                    <option value="" disabled selected>Administrativo</option>
+                                                    <option value="">Ocupacion / Cargo 2</option>
+                                                    <option value="">Ocupacion / Cargo 3</option>
+                                                    <option value="other">Otro</option>
+                                                </select>
+                                        </div>
+                                </div>   
+                                <div class="input-box radio-box anim-txt7">
+                                    <p class="title-forms">Años de experiencia</p>
+                                    <div class="d-flex justify-content-space-between labels-box">
+                                        <label class="Inputcontainer">
+                                            <span>1</span>
+                                            <input type="radio" checked="checked" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+        
+                                        <label class="Inputcontainer">2
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+        
+                                        <label class="Inputcontainer">3
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+        
+                                        <label class="Inputcontainer">+4
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="input-box radio-box radio-box-empresa anim-txt7">
+                                        <p class="title-forms">Tipo de empresa en la que trabaja</p>
+                                        <div class="d-flex justify-content-space-between m-top-2">
+                                            <label class="Inputcontainer">Pública
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+            
+                                            <label class="Inputcontainer">Privada
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>  
+                                </div>
+                                <div class="input-box anim-txt7">
+                                        <input class="input" type="text" placeholder="Nombre de la empresa">
+                                        <span class="bar"></span>
+                                        <label>Nombre de la empresa en la que trabaja</label>
+                                </div>   
+                                <div class="footer-form">
+                                    <button id="btnContinuarCuatro" class="green-btn" >Continuar</button>
+                                </div>                           
+                            </form>
+                        </div>
+                
+                </section>   
+
+                <section class="forms-container forms-container-datos" id="DatosLaboralesDos">
+        
+                        <div class="steps text-align-center">
+                            <span class="span"></span>
+                            <span></span>
+                            <span class="spanActive"></span>
+                            <span></span>
+                        </div>
+    
+                        <div class="header-container">
+                                <div class="header-form d-flex ">
+                                    <img id="" class="flecha-back" src="assets/img/flecha-back.svg" alt="">
+                                    <div>
+                                        <h2 class="bold-xs anim-txt8">Datos laborales </h2>
+                                        <p class="anim-txt8">Contanos un poco sobre tu lugar de trabajo</p>
+                                    </div>
+                                </div>
+                        </div> 
+                        <div class="row-forms">
+                                <form class="modal-main">
+                                        <div class=" input-box anim-txt8">
+                                            <input class="input" type="text" placeholder="0000 000 0000">
+                                            <span class="bar"></span>
+                                            <label>Teléfono de la empresa</label>
+                                        </div>
+                                        <div class=" input-box anim-txt8">
+                                            <input class="input" type="text" placeholder="Temporal">
+                                            <span class="bar"></span>
+                                            <label>Tipo de contrato</label>
+                                        </div>   
+                                        <div class="input-box anim-txt8">
+                                            <input class="input" type="text" placeholder="$00000">
+                                            <span class="bar"></span>
+                                            <label>Ingresos mensuales</label>
+                                        </div>                                                                               
+                                        <div class="footer-form">
+                                            <button id="btnContinuarCinco" class="green-btn" >Continuar</button>
+                                        </div>                           
+                                </form>                          
+                        </div>
+                
+                </section>   
+
+                <section class="forms-container forms-container-datos" id="ValidacionIdentidad">
+        
+                        <div class="steps text-align-center">
+                            <span class="span"></span>
+                            <span></span>
+                            <span ></span>
+                            <span class="spanActive"></span>
+                        </div>
+    
+                        <div class="header-container">
+                                <div class="header-form d-flex ">
+                                    <img class="flecha-back" src="assets/img/flecha-back.svg" alt="">
+                                    <div>
+                                        <h2 class="bold-xs anim-txt9">Validación de identidad</h2>
+                                        <p class="anim-txt9">Contanos quien te conoce bien de tu familia</p>
+                                    </div>
+                                </div>
+                        </div> 
+                        <div class="row-forms">
+                                <form class="modal-main">
+                                        <div class=" input-box anim-txt9">
+                                            <input class="input" type="text" placeholder="Lorem Ipsum">
+                                            <span class="bar"></span>
+                                            <label>Nombre y Apellido</label>
+                                        </div>
+                                        <div class=" input-box anim-txt9">
+                                            <input class="input" type="text" placeholder="000 000 000">
+                                            <span class="bar"></span>
+                                            <label>Celular</label>
+                                        </div>   
+                                        <div class=" input-box anim-txt9">
+                                            <input class="input" type="text" placeholder="60 254 987">
+                                            <span class="bar"></span>
+                                            <label>Cédula</label>
+                                        </div>                                               <div class=" input-box anim-txt9">
+                                            <input class="input" type="text" placeholder="Padre">
+                                            <span class="bar"></span>
+                                            <label>Relación de parentesco</label>
+                                        </div>             
+                                        <div class="footer-form">
+                                            <button id="btnContinuarSeis" class="green-btn" >Continuar</button>
+                                        </div>                           
+                                </form>                          
+                        </div>
+                
+                </section>  
+
+                <section class="forms-container forms-container-datos" id="ValidacionIdentidadDos">
+        
+                        <div class="steps text-align-center">
+                            <span class="span"></span>
+                            <span></span>
+                            <span ></span>
+                            <span class="spanActive"></span>
+                        </div>
+    
+                        <div class="header-container">
+                                <div class="header-form d-flex ">
+                                    <img id="" class="flecha-back" src="assets/img/flecha-back.svg" alt="">
+                                    <div>
+                                        <h2 class="bold-xs anim-txt10">Validación de identidad</h2>
+                                        <p class="anim-txt10">Contanos quién te conoce bien de tus amigos o trabajo</p>
+                                    </div>
+                                </div>
+                        </div> 
+                        <div class="row-forms">
+                                <form class="modal-main">
+                                        <div class=" input-box anim-txt10">
+                                            <input class="input" type="text" placeholder="Lorem Ipsum">
+                                            <span class="bar"></span>
+                                            <label>Nombre y Apellido</label>
+                                        </div>
+                                        <div class=" input-box anim-txt10">
+                                            <input class="input" type="text" placeholder="000 000 000">
+                                            <span class="bar"></span>
+                                            <label>Celular</label>
+                                        </div>   
+                                        <div class=" input-box anim-txt10">
+                                            <input class="input" type="text" placeholder="60 254 987">
+                                            <span class="bar"></span>
+                                            <label>Cédula</label>
+                                        </div>                                               <div class="input-box anim-txt10">
+                                            <input class="input" type="text" placeholder="Padre">
+                                            <span class="bar"></span>
+                                            <label>Relación de parentesco</label>
+                                        </div>             
+                                        <div class="footer-form">
+                                            <button id="btnContinuarSiete" class="green-btn" >Continuar</button>
+                                        </div>                           
+                                </form>                          
+                        </div>
+                
+                </section> 
+
+                <section class="forms-container forms-container-datos" id="MotivoSolicitud">
+        
+                        <div class="header-container">
+                                <div class="header-form d-flex ">
+                                    <img id="" class="flecha-back" src="assets/img/flecha-back.svg" alt="">
+                                    <div>
+                                        <h2 class="bold-xs anim-txt11">Lorem Ipsum</h2>
+                                        <p class="anim-txt11">Gracias por completar tus datos. <br>Te hacemos dos últimas preguntas.</p>
+                                    </div>
+                                </div>
+                        </div> 
+                        <div class="row-forms">
+                                <form class="modal-main">
+
+                                    <div class="input-box radio-box radio-box-solicitud">
+                                        <p class="title-forms anim-txt11">¿Cuál es el motivo de tu soliciud?</p>
+                                        <div class="labels-box d-flex flex-wrap justify-content-space-between anim-txt11">
+                                            <label class="Inputcontainer">
+                                                <span>Compras</span>
+                                                <input type="radio" checked="checked" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+            
+                                            <label class="Inputcontainer">Educación
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="Inputcontainer">Emergencias
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+            
+                                            <label class="Inputcontainer m-top-1">Gastos
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="Inputcontainer m-top-1">Inversión
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+            
+                                            <label class="Inputcontainer m-top-1">Otros
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="input-box anim-txt11">
+                                        <p class="title-forms">¿Cuál es el banco que vas a usar?</p>
+                                        <div>
+                                            <input class="input" type="text" placeholder="Lorem Ipsum">
+                                            <span class="bar"></span>
+                                            <label></label>
+                                        </div>
+                                    </div>   
+                                    <div class="footer-form">
+                                        <button id="btnContinuarOcho" class="green-btn" >Continuar</button>
+                                    </div>                           
+                                </form>
+                            </div>
+                
+                </section> 
+
+                <section class="forms-container forms-container-datos" id="ResultadoAprobacion">
+        
+                        <div class="header-container">
+                                <div class="header-form d-flex ">
+                                    <img id="" class="flecha-back" src="assets/img/flecha-back.svg" alt="">
+                                    <div>
+                                        <h2 class="bold-xs anim-txt12">Resultado de Aprobación</h2>
+                                        <p class="anim-txt12">¡Listo! vamos a validar tu información. <br> Primero revisá con atención tu solicitud. </p>
+                                    </div>
+                                </div>
+                        </div> 
+                        <div class="row-forms">
+                                <table class="table-forms table-detalle-prestamo d-flex flex-wrap">
+                                   <caption class="title-forms anim-txt12">Detalle del préstamo</caption>
+                                   <tbody class="d-flex justify-content-space-between anim-txt12">
+                                        <tr>
+                                            <th>Valor solicitado</th>
+                                            <th>Interés</th>
+                                            <th>Seguro</th>
+                                            <th>Administración</th>
+                                            <th>Sub Total</th>
+                                        </tr>
+                                        <tr>
+                                            <td>$290.000</td>
+                                            <td>$5.443</td>
+                                            <td>$1.302</td>
+                                            <td>$16.000</td>
+                                            <td>$312.745</td>
+                                        </tr>                                       
+                                   </tbody>
+                                </table>
+                                <table class="table-forms table-detalle-prestamo d-flex flex-wrap">
+                                   <caption class="title-forms anim-txt12">Detalle de cuotas</caption>
+                                   <tbody class="d-flex justify-content-space-between anim-txt12">
+                                        <tr>
+                                            <th>Días de pago</th>
+                                            <th>Primer pago</th>
+                                        </tr>
+                                        <tr>
+                                            <td>a 30 días</td>
+                                            <td>15/09/2019</td>
+                                        </tr>                                       
+                                   </tbody>
+                                </table>
+                                <table class="table-forms table-detalle-prestamo d-flex flex-wrap">
+                                   <caption class="title-forms anim-txt12">Condiciones Transparentes</caption>
+                                   <tbody class="d-flex justify-content-space-between anim-txt12">
+                                        <tr>
+                                            <th>Tecnología</th>
+                                            <th>IVA</th>
+                                        </tr>
+                                        <tr>
+                                            <td>$30.000</td>
+                                            <td>$8.740</td>
+                                        </tr>                                       
+                                   </tbody>
+                                </table> 
+                                <div class="Total-Pago d-flex justify-content-space-between ">
+                                     <p>TOTAL A PAGAR</p>
+                                     <p>$351.400</p>
+                                </div>
+                                <div class="footer-form">
+                                    <button id="btnContinuarNueve" class="green-btn" >Continuar</button>
+                                </div>                           
+                               
+                        </div>
+                
+                </section>  
+                
+                <section class="forms-container forms-container-datos" id="MensajeFinaizacion">
+        
+                        <div class="header-container">
+                                <div class="header-form d-flex ">
+                                    <img id="" class="flecha-back" src="assets/img/flecha-back.svg" alt="flecha volver">
+                                    <div>
+                                        <h2 class="anim-txt13"><span>Mayra</span> ya estás a <span class="bold-xs">un paso de tu préstamo</span></h2>
+                                    </div>
+                                </div>
+                        </div> 
+                        <div class="row-forms">
+                                <div class="text-align-center m-top-3">
+                                    <img class="anim-txt13" src="assets/img/ico-medalla.svg" alt="icono medalla">
+                                    <p class="txt-preg m-top-2 anim-txt13">Estamos terminando de validar tu información. <span class="bold">No cierres esta ventana</span> en unos minutos más te mencionamos el estado de tu préstamo. </p>
+                                </div>
+
+                                <div class="footer-form">
+                                    <button id="btnCerrar" class="green-btn" >Finalizar</button>
+                                </div>                           
+                               
+                        </div>
+                
+                </section>                 
+                
+    </div>
+
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <script src="assets/js/formulario.js"></script>
+    <script src="assets/js/pikaday.js"></script>
+
+    <script>
+        //Calendario
+       /* var picker = new Pikaday({
+            field: document.getElementById('datepicker'),
+            firstDay: 1,
+            yearRange: [2000, 2030],
+            //bound: false,
+            container: document.getElementById('CalendarContainer'),
+            format: 'D/M/YYYY',
+            toString(date, format) {
+            // you should do formatting based on the passed format,
+            // but we will just return 'D/M/YYYY' for simplicity
+            const day = date.getDate();
+            const month = date.getMonth() + 1;
+            const year = date.getFullYear();
+            return `${day}/${month}/${year}`;
+            },
+
+        });*/
+    </script>
+    <script>
+
+    //Multiples opciones Input
+    /* window.onload = function(){
+            var selBox = document.getElementById('ActividadEconomica');
+            selBox.onchange = function(){
+                if(this.value == 'others'){
+                document.getElementById('other').style.display = 'none';
+                
+                }
+                else{
+
+                    document.getElementById('other').style.display = 'block';
+                    document.getElementById('ActividadEconomica').style.display = 'none';
+                }
+            }
+        }
+    */
+
+    </script>
+
+</body>
+
+</html>

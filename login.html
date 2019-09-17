@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
+
+    <title>login</title>
+</head>
+<body class="body">
+    <!--Header-->
+    <!--?php
+    include "header.php";
+    ?-->
+
+
+<div class="container-formularios">
+
+            <section class="forms-container form-login forms-container-fixed" id="login">
+        
+                <div class="header-container">
+                    <div class="header-form go">
+                            <h2>Bienvenido/a al <span class="bold-xs"> Inicio de Sesión</span> </h2>
+                            <p>Ingrese sus datos para acceder a tu perfil</p>
+                   </div>
+                </div>
+        
+                <div class="row-forms">
+                    <div class="modal-main">
+                        <div class="go input-box">
+                            <input class="input" type="text" placeholder="60 304 568">
+                            <span class="bar"></span>
+                            <label>Cédula</label>
+                        </div>
+                        <div class="go input-box">
+                                <input class="input" type="text" placeholder="Mayra Guya">
+                                <span class="bar"></span>
+                                <label>Usuario</label>
+                        </div>
+                        <div class="go input-box">
+                                <input class="input" type="text" placeholder="**">
+                                <span class="bar"></span>
+                                <label>Clave</label>
+                        </div>
+                    </div>
+                    <div class="footer-form">
+                        <button id="ingresar" class="btn-bcg-purple" >Ingresar</button>
+                        <div class="d-flex">
+                            <a href="" class="forgot-password">Olvide mi contraseña</a>
+                            <a href="" class="create-account">Crear una cuenta</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </section>
+        
+            <section class="forms-container form-login forms-container-fixed" id="register">
+        
+                    <div class="header-container">
+                        <div class="header-form go2">
+                                <h2><span class="bold-xs">Registrate</span> y viví la experiencia Solventa </h2>
+                                <p>Contanos un poco de vos</p>
+                       </div>
+                    </div>
+            
+                    <div class="row-forms">
+                        <div class="modal-main modal-main-register">
+                            <div class="go2 input-box">
+                                    <input class="input" type="text" placeholder="12304568">
+                                    <span class="bar"></span>
+                                    <label>Cédula</label>
+                            </div>
+                            <div class="go2 input-box">
+                                    <input class="input" type="text" placeholder="Mayra Guya">
+                                    <span class="bar"></span>
+                                    <label>Usuario</label>
+                            </div>
+                            <div class="go2 input-box">
+                                    <input class="input" type="text" placeholder="****">
+                                    <span class="bar"></span>
+                                    <label>Clave</label>
+                            </div>
+                            <div class="go2 input-box">
+                                    <input class="input" type="text" placeholder="****">
+                                    <span class="bar"></span>
+                                    <label>Repetir Clave</label>
+                            </div>
+                        </div>
+                        <div class="footer-form footer-form-register">
+                            <button id="continuar" class="btn-bcg-purple" >Continuar</button>
+                            <p>Al continuar acepto <span class="bold">Términos y Condiciones</span> y las <span class="bold">Políticas de Privacidad</span></p>
+                        </div>
+                    </div>
+            
+            </section>
+        
+            <section class="forms-container form-login forms-container-fixed" id="registerDos">
+        
+                <div class="header-container">
+                    <div class="header-form d-flex go3">
+                        <img id="VolverRegisterDos" class="flecha-back" src="assets/img/flecha-back.svg" alt="">
+                        <div>
+                            <h2><span class="bold-xs">Registrate</span> y viví la experiencia Solventa </h2>
+                            <p>Contanos un poco de vos</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="row-forms">
+                    <div class="modal-main">
+                        <div class="go3 input-box">
+                                <input class="input" type="text" placeholder="000 000 000">
+                                <span class="bar"></span>
+                                <label>Celular</label>
+                        </div>
+                        <div class="go3 input-box">
+                                <input class="input" type="text" placeholder="mguya@gmail.com">
+                                <span class="bar"></span>
+                                <label>Correo Electrónico</label>
+                        </div>
+                    </div>
+                    <div class="footer-form footer-form-register">
+                        <button id="finalizar" class="btn-bcg-purple" >Finalizar</button>
+                    </div>
+                </div>
+        
+            </section>
+
+</div>
+
+    <!--Footer-->
+    <!--?php
+    include "footer.php";
+    ?-->
+
+    <!--Pop Up Centro Ayuda-->
+    <!--?php
+    include "popup-centro-ayuda.php";
+    ?-->
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <script src="assets/js/forms.js"></script>
+
+
+</body>
+
+</html>
