@@ -8,7 +8,7 @@
     <script src="assets/js/jquery.min.js" ></script>
 
     <!-- Start of  Zendesk Widget script -->
-    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=3b237cb2-bff6-4c77-bfc2-7b7892881972"> </script>
+    <!--script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=3b237cb2-bff6-4c77-bfc2-7b7892881972"> </script-->
     <!-- End of  Zendesk Widget script -->
     <title>Solventa</title>
 
@@ -385,17 +385,16 @@
 <?php include "footer.php"; ?>    
 
 
-<!--?php
-include "popup-centro-ayuda.php";
-?-->
+<?php include "popup-centro-ayuda.php"; ?>
 
 <link rel="stylesheet" href="assets/css/swiper.min.css">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <script src="assets/js/rangeslider.min.js"></script>
 <script src="assets/js/main.js" ></script>
 <script src="assets/js/swiper.min.js" ></script>
-<!--script src="assets/js/ventana-centro-ayuda.js"></script-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.8/lottie.min.js"></script>
+<script src="assets/js/ventana-centro-ayuda.js"></script>
+<script src="assets/js//lottie.js"></script>
+
 
 
 <script>
@@ -462,32 +461,32 @@ function loader(div, pathLocation) {
 
     var AnimationCel = bodymovin.loadAnimation({
 
-        container: document.getElementById('AnimationCel'),
-        renderer: 'svg',
-        loop: true,
-        autoplay: false,
-        autoloadSegments: false,
-        path: 'assets/lottie/data.json'
+            container: document.getElementById('AnimationCel'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: false,
+            autoloadSegments: false,
+            path: 'assets/lottie/data.json'
         });
         AnimationCel.playSegments([[0,264],[56,264]], true);
 
         var animationDos = bodymovin.loadAnimation({
 
-        container: document.getElementById('dos'),
-        renderer: 'svg',
-        loop: true,
-        autoplay: false,
-        path: 'assets/lottie/dataDos.json'
+            container: document.getElementById('dos'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: false,
+            path: 'assets/lottie/dataDos.json'
 
         });
 
         var animationTres = bodymovin.loadAnimation({
 
-        container: document.getElementById('tres'),
-        renderer: 'svg',
-        loop: true,
-        autoplay: false,
-        path: 'assets/lottie/dataTres.json'
+            container: document.getElementById('tres'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: false,
+            path: 'assets/lottie/dataTres.json'
         });
 
         setTimeout(function(){ 

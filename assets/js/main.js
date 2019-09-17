@@ -14,7 +14,7 @@ BcgMobile.addEventListener('click', () => {
     BcgMobile.classList.remove('BcgMobileActive');
 });
 
- 
+//Slider de Prestamos Home 
  var valueBubble = '<div class="Range_Value_Bubble" id="value-box"></div>';
  var valueBubbleDos = '<div class="Range_Value_Bubble" id="ValueBoxDos"></div>';
  
@@ -115,7 +115,6 @@ document.getElementById('BtnScrollDown').onclick = function(){
 var ColorLinks = document.querySelectorAll('.menu-lnks');
 var barraHome = document.getElementById('home');
 
-
 window.addEventListener( 'scroll' , () => {
 
   if(window.scrollY >= 60){
@@ -128,8 +127,8 @@ window.addEventListener( 'scroll' , () => {
      for (i = 0; i < ColorLinks.length; i++) {
       ColorLinks[i].classList.add('menu-lnks-black');
     } 
-    SolvDesktop.src = 'assets/img/solventa-violeta.svg';
-    BtnCuenta.classList.add('white-border-btn-scroll');
+      SolvDesktop.src = 'assets/img/solventa-violeta.svg';
+      BtnCuenta.classList.add('white-border-btn-scroll');
     
   }else{
 
