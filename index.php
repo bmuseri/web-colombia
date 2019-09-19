@@ -91,21 +91,32 @@
                        <div class="white-box margin-auto" id="boxwhite">
            
                            <div class="container-white-box" >
-                                   <div class="header-white-box" ><p class="purple-txt bold" >Solicitá tu préstamo</p></div>
+
+                                   <div  class="btn-prestamo-destacado" id="BtnCircle">
+                                       <div class="billetera-icon" id="BilleteraIcon"></div>
+                                       <p>Préstamo destacado</p>
+                                   </div>
+                                   
+
+                                   <div class="header-white-box" ><p class="purple-txt bold" >Solicita tu préstamo</p></div>
+
                                    <div class="d-flex box-white-box">
                                        <div class="elegi">
                                                <div>
-                                                    <p class="title-barra">Elije tu dinero</p>
+                                                    <p class="title-barra">Elija tu dinero</p>
                                                     <div class="barra-dinero">
                                                         
                                                         <div>
                                                             <input type="range" step="50000" min="200000" max="2200000" id='pesos' >
-                                                                
+                                                            <div class="d-flex">
+                                                                <p>$150.000</p>  
+                                                                <p>$1.000.000</p>  
+                                                            </div> 
                                                         </div>
                                                     </div>
                                                </div>
                                                <div>
-                                                   <p class="title-barra">Elije cuando pagarlo</p>
+                                                   <p class="title-barra">Elija cuando pagarlo</p>
                                                    <div class="barra-dinero">
                                                 
                                                     <input type="range" id='dias' max="32" >
@@ -117,7 +128,10 @@
                                                </div>
                                        </div>
                                        <div class="datos">
-                                           <div class="box-1"><p class="bold">Fecha de Pago: <span class="fecha">10 de julio</span> </p></div>
+                                           <div class="box-1 d-flex align-items-center">
+                                               <p class="bold">Pago de la primer cuota </p>
+                                               <img class="calendar-icon" src="assets/img/calendar-icon.svg" alt="calendar icon">
+                                            </div>
                                            <div class="box-2">
                                                <p class="bold">DETALLE DE CUOTAS</p>
                                                <div class="datos-box">
@@ -157,7 +171,7 @@
 
             <div class="container">
                     <h2 class="h2-purple">Lo que nos diferencia</h2>
-                    <p style="text-align: center; padding-top: 0.5em">Siempre buscamos ayudarte</p>
+                    <p style="text-align: center; padding-top: 0.5em">Siempre buscamos ayudarlo</p>
                     <div class="d-flex box-icon-container p-5 box-desktop">
                             <div class="box-icons">
                                 <div class="AnimationContainer">
@@ -166,13 +180,13 @@
                                     
                                 </div>
                                 <p class="bold">Somos 100% digital</p>
-                                <p class="txt-icons">Pida un prestamo desde su computadora o celular sin trámites ni papeleos.</p>
+                                <p class="txt-icons">Pida un Préstamo desde su computadora o celular sin trámites ni papeleos.</p>
                                 <button class="btn-purple">Saber más</button>
                             </div>
                             <div class="box-icons">
                                 <div id="dos"></div>
                                 <p class="bold">Cumple y gana dinero</p>
-                                <p class="txt-icons">LLeve al día las cuotas de su préstamo y obtendrá beneficios extras.</p>
+                                <p class="txt-icons">LLeve al día las cuotas de su Préstamo y obtendrá beneficios extras.</p>
                                 <button class="btn-purple">Saber más</button>
                             </div>
                             <div class="box-icons">
@@ -223,23 +237,23 @@
     <section class="beneficios">
 
         <div class="container">
-                <h2 class="text-align-center">Conoce nuestros beneficios</h2>
-                <p class="sub-text text-align-center"> <img class="check-icono" src="assets/img/check.svg" alt="check icon"> Compartí lo bueno con amigos</p>
+                <h2 class="text-align-center">Conozca nuestros beneficios</h2>
+                <p class="sub-text text-align-center"> <img class="check-icono" src="assets/img/check.svg" alt="check icon"> Comparte lo bueno con amigos</p>
         
                 <div class="box-white margin-auto">
-                    <p class="text-align-center p-h2 beneficios-txt">Solventa premia tu confianza y cumplimiento con el servicio. Disfrutá de los beneficios.</p>
+                    <p class="text-align-center p-h2 beneficios-txt">Solventa premia tu confianza y cumplimiento con el servicio. Disfrute de los beneficios.</p>
         
                     <div class="d-flex justify-content-around medalla-box">
                         <div class="first-box">
                             <p class="purple-txt title-purple">REFIERE Y GANA DINERO</p>
-                            <P>Tu fidelidad tiene su recompensa. Por cada referido tuyo, que obtenga un préstamo Solventa puede ganar desde $6.000.</P>
+                            <P>Tu fidelidad tiene su recompensa. Por cada referido por usted, que obtenga un Préstamo Solventa, puede ganar desde $6.000.</P>
                         </div>
                         <div class="middle-box" >
                             <img class="medalla-icon" src="assets/img/ico-medalla.svg" alt="medalla icon">
                         </div>
                         <div class="third-box">
                             <p class="purple-txt title-purple">CUMPLE Y GANA DINERO</p>
-                            <P>Lleve al día las cuotas de tu préstamo y obtendrás beneficios extras en tu próxima solicitud.</P>
+                            <P>Lleve al día las cuotas de tu Préstamo y obtendras beneficios extras en tu próxima solicitud.</P>
                         </div>    
                     </div>
 
@@ -252,8 +266,8 @@
     <section class="prestamo-rapido">
 
         <div class="container">
-            <h2>Sacar tu Préstamo es muy fácil</h2>
-            <p class="p-txt sub-text sub-text-prest"> <span><img class="check-icon check-icon-black" src="assets/img/check-black.svg" alt="check icon"></span> En sólo 4 simples pasos puede tener depositado el dinero que necesita</p>
+            <h2>Solicitar tu Préstamo es muy fácil</h2>
+            <p class="p-txt sub-text sub-text-prest"> <span><img class="check-icon check-icon-black" src="assets/img/check-black.svg" alt="check icon"></span> En sólo 4 simples pasos puedes tener depositado el dinero que necesita</p>
 
             <div class="d-flex mockups">
                 <div class="phone-mockup">
@@ -262,7 +276,7 @@
                     </div>
                     <div class="d-flex numbers-box datos-img">
                         <img class="numbers-iconos"  src="assets/img/uno.svg" alt="">
-                        <p> <span class="bold">Ingrese </span>tus datos</p>
+                        <p> <span class="bold">Ingrese </span>sus datos</p>
                     </div>
                 </div>
                 <div class="phone-mockup">
@@ -360,7 +374,7 @@
     <section class="pagar-prestamo">
 
         <div class="container">
-                <h2 class="h2-purple">Page su préstamo como quieras</h2>
+                <h2 class="h2-purple">Pague su Préstamo como quiera</h2>
                 <p class="p-txt sub-text"> <img src="assets/img/check-black.svg" class="check-icon check-icon-black" alt="check icon"> Trabajamos con diversas entidades y sistemas de pago</p>
                 <!--div class="img-brands">
                     <img src="assets/img/logos-grises.png" alt="" class="marcas logos">
@@ -377,7 +391,7 @@
             <div class="content content-left">
                     <h2 class="h2-white">Pida su préstamo desde su celular</h2>
                     <!--p class="p-white sub-text">Con <span class="bold">Solventa</span> disfrutá de pedir el Dinero que necesitas estés donde estés SOLICITUD 100% ONLINE</p-->
-                    <button class="btn-descarga" >Descargá la app</button>
+                    <button class="btn-descarga" >Descargar</button>
             </div>
         </div>
     </section>
@@ -398,7 +412,6 @@
 
 
 <script>
-    
     /*Slider*/
     var swiper = new Swiper('.swiper-container-mockup', {
       slidesPerView: 1,
@@ -520,17 +533,14 @@ window.addEventListener('scroll', () => {
 
 //Animaciones Mobile
     setTimeout(function(){ 
-        //AnimationCelM.play();
         AnimationCelM.playSegments([[0,264],[56,264]], true);
     }, 1000);
 
     setTimeout(function(){ 
-        //animationDosM.playSegments();
         animationDosM.playSegments([[0,170],[55,170]], true);
     }, 1800);
 
     setTimeout(function(){ 
-        //animationTresM.play();
         animationTresM.playSegments([[0,149],[60,147]], true);
     }, 3000);
 
@@ -539,6 +549,10 @@ window.addEventListener('scroll', () => {
 BtnPedirPrestamo.addEventListener('click', () => {
     BtnScrollDown.style.display = 'none';
 });
+
+
+
+
 
 </script>
 

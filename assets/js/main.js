@@ -1,4 +1,7 @@
-//Menu Mobile
+//
+// ────────────────────────────────────────────────────────────── MENU MOBILE ─────
+//
+ 
 var BtnMenu = document.getElementById('BtnMenu');
 
 BtnMenu.addEventListener('click', () => {
@@ -79,7 +82,11 @@ $('#dias').rangeslider({
  }
 
 
-/*Button de Scroll*/
+//
+// ───────────────────────────────────────────────────────── BUTTON DE SCROLL ─────
+//
+
+  
 window.smoothScroll = function(target) {
   var scrollContainer = target;
   do { //find scroll container
@@ -110,7 +117,10 @@ document.getElementById('BtnScrollDown').onclick = function(){
 };
 
 
-//Fixed Header
+//
+// ───────────────────────────────────────────────────────────── FIXED HEADER ─────
+//
+  
 
 var ColorLinks = document.querySelectorAll('.menu-lnks');
 var barraHome = document.getElementById('home');
@@ -147,7 +157,11 @@ window.addEventListener( 'scroll' , () => {
 
 });
 
-//Styles al abrir Form en Home
+
+//
+// ───────────────────────────────────────────── STYLES AL ABRIR FORM EN HOME ─────
+//
+
 
   var lines = document.querySelectorAll('#AnimatedIcon div'), i;
 
@@ -160,19 +174,22 @@ window.addEventListener( 'scroll' , () => {
   FixedTopContainer.classList.add('FormActive');
 });
 
-//AL ABRIR FORM SCROLLEAR 60PX HACIA ABAJO
+//
+// ───────────────────────────────── AL ABRIR FORM SCROLLEAR 60PX HACIA ABAJO ─────
+//
+  
 
 function myFunction(mediaQuery) {  
     if (mediaQuery.matches) { 
       $("#BtnPedirPrestamo").click(function(event){
-        $('html, body').animate({scrollTop: '+=72px'}, 600);
+        $('html, body').animate({scrollTop: '+=75px'}, 600);
       });
   } 
  }
  
  var mediaQuery = window.matchMedia("(max-width: 1000px)")
  myFunction(mediaQuery) 
- mediaQuery.addListener(myFunction) //
+ mediaQuery.addListener(myFunction) 
 
 
 
@@ -206,3 +223,13 @@ CerrarTerm.addEventListener('click', () => {
 */
 
 
+//
+// ──────────────────────────────────── ANIMACION BTN PRESTAMO DESTACADO HOME ─────
+//
+
+var BtnCircle = document.getElementById('BtnCircle');
+
+BtnCircle.addEventListener('click', () => {
+    BtnCircle.classList.add('BtnCircleTransform');
+    BilleteraIcon.classList.add('BtnCircleTransformImg');
+});

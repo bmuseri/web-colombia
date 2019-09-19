@@ -35,14 +35,15 @@
                     </div>
             
                     <div class="row-forms">
-                        <form class="modal-main">
+                        <form class="modal-main" id="FormValidation">
                             <div class=" input-box anim-txt">
-                                <input class="input" type="text" placeholder="John">
-                                <span class="bar"></span>
+                                <input id="nombre" type="text" placeholder="John" >
+                                <span class="bar"><span id="Mje"></span><span id="MjeOK"></span></span>
                                 <label>Nombre</label>
+                               
                             </div>
                             <div class=" input-box anim-txt">
-                                    <input class="input" type="text" placeholder="Doe">
+                                    <input id="apellido" class="input" type="text" placeholder="Doe">
                                     <span class="bar"></span>
                                     <label>Apellido</label>
                             </div>
@@ -203,8 +204,35 @@
 
     <link rel="stylesheet" href="assets/fonts/fonts.css">
     <script src="assets/js/formulario.js"></script>
+    <script src="assets/js//lottie.js"></script>
 
 
+<script>
+
+//Lottie Animation
+/*var InputError = bodymovin.loadAnimation({
+
+    container: document.getElementById('Mje'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'assets/lottie/InputError.json'
+});
+InputError.play();
+
+var InputOk = bodymovin.loadAnimation({
+
+    container: document.getElementById('Mje'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'assets/lottie/InputOk.json'
+});
+InputOk.play();
+*/
+
+
+</script>
 </body>
 
 </html>

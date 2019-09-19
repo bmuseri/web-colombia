@@ -70,12 +70,16 @@ document.getElementById('btnComenzar').onclick = function(){
     toggleVisibility('DatosPersonalesDos');
     animationTxt2.play();
     event.preventDefault();
+
 }
+
 document.getElementById('btncomenzarDos').onclick = function(){ 
     toggleVisibility('DatosPersonalesTres');
     animationTxt3.play();
     event.preventDefault();
 }
+
+
 /*
     document.getElementById('btnFinalizar').onclick = function(){ 
     toggleVisibility('DatosLocacion');
@@ -131,3 +135,26 @@ cerrar.addEventListener('click', () => {
 });
 */
 
+//VAIDATION FORM
+
+/*
+function ValidacionForm() {
+  var nombre = document.getElementById("nombre");
+      apellido = document.getElementById("apellido");
+
+
+  if (nombre.value === "") {
+     document.getElementById("Mje").innerHTML = "<span class='MjeError bold'>Completar nombre</span>";
+     ErrorCross.play();
+
+  } else {
+    document.getElementById("Mje").innerHTML = "Input OK";
+    InputOk.play();
+  } 
+} 
+
+document.getElementById('btnComenzar').onclick = function(){
+   event.preventDefault();
+   ValidacionForm();
+}
+*/

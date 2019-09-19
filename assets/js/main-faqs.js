@@ -5,13 +5,16 @@ document.addEventListener("DOMContentLoaded", function(){
 var BtnMenu = document.getElementById('BtnMenu');
 
 BtnMenu.addEventListener('click', () => {
-
   AnimatedIcon.classList.toggle('AnimationCruz');
   menu.classList.toggle('MenuActive');
   BcgMobile.classList.toggle('BcgMobileActive');
-
 });
-
+//Cerrar Menu Mobile
+BcgMobile.addEventListener('click', () => {
+  AnimatedIcon.classList.remove('AnimationCruz');
+  menu.classList.remove('MenuActive');
+  BcgMobile.classList.remove('BcgMobileActive');
+});
 
 //Fixed Header
 
@@ -56,6 +59,26 @@ nosotros.addEventListener('click' , () => {
   nosotros.classList.toggle('card-icon-active');
   
 });
+
+
+
+/*var BoxCardsContainer = document.getElementById("BoxCardsContainer");
+var btns = BoxCardsContainer.getElementsByClassName("card-icon");
+
+for (var i = 0; i < btns.length; i++) {
+
+  btns[i].addEventListener("click", function() {
+
+  var ActiveCard = document.getElementsByClassName("card-icon-active");
+
+  if (ActiveCard.length > 0) { 
+    ActiveCard[0].className = ActiveCard[0].className.replace("card-icon-active", "");
+  }
+
+  this.className += "card-icon-active";
+  });
+}
+*/
 
 
 //Show and Hide distintos contenedores de preguntas

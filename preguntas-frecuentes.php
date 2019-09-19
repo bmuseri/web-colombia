@@ -25,7 +25,7 @@
                 <p class="text-align-center subt-h2">Si tenés dudas en Solventa tenemos la respuesta para cada una de ellas.</p>
         
                 <div class="box-cards d-flex" id="BoxCardsContainer">
-                        <div class="card-icon" id="prestamos">
+                        <div class="card-icon " id="prestamos">
                                 <div class="cel-icon">
                                 </div>
                                 <p class="purple-title">Préstamos</p>
