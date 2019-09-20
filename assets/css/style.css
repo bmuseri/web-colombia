@@ -172,10 +172,11 @@ h2{
     cursor: pointer
 }
 .white-box .purple-txt{
-    color: #bdbdbd;
+    color: #4c4c4c;
     font-weight: 700;
     font-size: 32px;
     letter-spacing: -1px;
+    font-family: 'montserratextrabold';
 }
 .prestamo-celular .container .content-left h2{
     margin-bottom: 0.8em;
@@ -199,13 +200,20 @@ h2{
     padding: 1em 0;
     width: 100%;
 }
+
+.datos-box div p:first-child{
+    width: 60%;
+}
+.datos-box div p:last-child{
+    width: 40%;
+}
 .datos-box div p{
     width: 50%
 }
 .title-barra{
     margin-bottom: 3em;
     margin-top: 2em;
-    color: #a5a5a5 !important;
+    color: #4c4c4c; 
 }
 .barra-dinero div div{
     justify-content: space-between;
@@ -297,14 +305,15 @@ button{
 .align-items-center{
     align-items: center;
 }
-.margin-auto{
-    margin: 0 auto
-}
+
 .justify-content-between{
     justify-content: space-between
 }
 .justify-content-around{
     justify-content: space-around
+}
+.margin-auto{
+    margin: 0 auto
 }
 .white-box{
     background: #fff;
@@ -2577,7 +2586,21 @@ select{
      box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.10);
      color: #6b2378;
  }
-
+ @keyframes BtnCircleTransform{
+ 
+    50%{
+      /* width: 150px;
+       height: 70px;*/
+       border-radius: 50px;
+    }
+    100%{
+      width: 258px;
+      height: 40px;
+      border-radius: 25px;
+      transform: translate(0,60px);
+    }  
+    
+  }
  .btn-prestamo-destacado .billetera-icon {
      width: 36px;
      height: 36px;
@@ -2589,25 +2612,61 @@ select{
     background-size: contain;   
     width: 25px;
     margin-right: 0.7em
- }
+}
  
+ .BoxPurple {
+    background: #6b2378;
+    color: white!important;
+    border-radius: 7px;
+    padding: 0.7em 0;
+    display: inline;
+    margin-bottom: 1.5em;
+    font-size: 0.8em;
+    font-family: 'montserratextralight'!important;
+    width: 110px;
+    text-align: center;
+}
 
- @keyframes BtnCircleTransform{
+/*
+ * ───────────────────────────────────────────────────────────── RANGE SLIDER ─────
+ */
  
-   50%{
-     /* width: 150px;
-      height: 70px;*/
-      border-radius: 50px;
-   }
-   100%{
-     width: 258px;
-     height: 40px;
-     border-radius: 25px;
-     transform: translate(0,60px);
-   }  
-   
- }
-
+ .SliderBar {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    outline: none;
+    background: #e6e6e6;
+    position: relative;
+    border-radius: 15px;
+  }
+  
+  
+  .SliderBar::-webkit-slider-thumb {
+     -webkit-appearance: none;
+     appearance: none;
+     cursor: pointer;
+     border: 0.2vw solid #fff;
+      cursor: pointer;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: #6b2378;
+     -moz-box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.35);
+      -webkit-box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.35);
+      box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.35);
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      position:relative;
+      transition: .3s;
+  }
+  
+  .SliderBar:active::-webkit-slider-thumb{
+      border: 0.17vw solid #fff;
+      transition: .3s;
+  }
+    
 
 @media (max-width:1200px) and (min-width:1000px){
 

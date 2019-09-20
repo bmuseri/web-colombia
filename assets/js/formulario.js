@@ -125,6 +125,9 @@ BtnPedirPrestamo.addEventListener('click', () => {
     animationTxt.delay(1.4);
 });
 
+
+
+
 //CERRAR FORM
 /*
 var cerrar = document.getElementById('btnCerrar');

@@ -17,12 +17,21 @@ BcgMobile.addEventListener('click', () => {
     BcgMobile.classList.remove('BcgMobileActive');
 });
 
-//Slider de Prestamos Home 
- var valueBubble = '<div class="Range_Value_Bubble" id="value-box"></div>';
- var valueBubbleDos = '<div class="Range_Value_Bubble" id="ValueBoxDos"></div>';
+//
+// ──────────────────────────────────────────────────────────────END MENU MOBILE ─────
+//
+
+
+//
+// ───────────────────────────────────────────────── SLIDER DE PRESTAMOS HOME ─────
+//
+
+  
+/*var valueBubble = '<div class="Range_Value_Bubble" id="value-box"></div>';
+var valueBubbleDos = '<div class="Range_Value_Bubble" id="ValueBoxDos"></div>';
  
 
- function updateValueBubble(pos, value, context) {
+function updateValueBubble(pos, value, context) {
    pos = pos || context.position;
    value = value || context.value;
    var $valueBubble = $('#value-box', context.$range);
@@ -34,7 +43,9 @@ BcgMobile.addEventListener('click', () => {
      $valueBubble[0].innerHTML = '$' + value ;
    } 
  }
- 
+
+
+
  function updateValueBubbleDos(pos, value, context) {
    pos = pos || context.position;
    value = value || context.value;
@@ -47,7 +58,7 @@ BcgMobile.addEventListener('click', () => {
      $valueBubbleDos[0].innerHTML = 'Días ' + value;
    }
  }
- 
+
 
  $('#pesos').rangeslider({
    polyfill: false,
@@ -80,7 +91,55 @@ $('#dias').rangeslider({
  slider.oninput = function(){
      val.innerHTML = '$' + this.value; 
  }
+*/
 
+//
+// ───────────────────────────────────────────────────── SOLICITA TU PRESTAMO ─────
+//
+
+  
+
+var slider = document.getElementById("pesos");
+var ValorMonto = document.getElementById("MontoDinero");
+var ValorMontoDos = document.getElementById("ValorMontoDos");
+
+ValorMonto.innerHTML = slider.value;
+
+slider.oninput = function() {
+  ValorMonto.innerHTML = '$' + this.value;
+  ValorMontoDos.innerHTML = '$' + this.value;
+}
+
+
+var slider = document.getElementById("dias");
+var ValCantDias = document.getElementById("MontoCuota");
+
+ValCantDias.innerHTML = slider.value;
+
+slider.oninput = function() {
+  ValCantDias.innerHTML = '$' + this.value;
+}
+
+//Aparicion Boton Prestamo Destacado
+var slider = document.getElementById("pesos");
+var BtnCircle = document.getElementById('BtnCircle');
+
+      slider.addEventListener("input", function() {
+        BtnCircle.classList.add('BtnCircleTransform');
+        BilleteraIcon.classList.add('BtnCircleTransformImg');            
+      }); 
+
+//
+// ──────────────────────────────────── ANIMACION BTN PRESTAMO DESTACADO HOME ─────
+//
+/*
+var BtnCircle = document.getElementById('BtnCircle');
+
+BtnCircle.addEventListener('click', () => {
+    BtnCircle.classList.add('BtnCircleTransform');
+    BilleteraIcon.classList.add('BtnCircleTransformImg');
+});
+*/
 
 //
 // ───────────────────────────────────────────────────────── BUTTON DE SCROLL ─────
@@ -223,13 +282,3 @@ CerrarTerm.addEventListener('click', () => {
 */
 
 
-//
-// ──────────────────────────────────── ANIMACION BTN PRESTAMO DESTACADO HOME ─────
-//
-
-var BtnCircle = document.getElementById('BtnCircle');
-
-BtnCircle.addEventListener('click', () => {
-    BtnCircle.classList.add('BtnCircleTransform');
-    BilleteraIcon.classList.add('BtnCircleTransformImg');
-});

@@ -103,11 +103,16 @@
                                    <div class="d-flex box-white-box">
                                        <div class="elegi">
                                                <div>
-                                                    <p class="title-barra">Elija tu dinero</p>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="title-barra">Elija tu dinero</p>
+                                                        <p class="bold BoxPurple" id="MontoDinero"></p>
+                                                    </div>
                                                     <div class="barra-dinero">
-                                                        
                                                         <div>
-                                                            <input type="range" step="50000" min="200000" max="2200000" id='pesos' >
+                                                            <!--input type="range" step="50000" min="200000" max="2200000" id='pesos' -->
+                                                            <div class="slidecontainer">
+                                                                  <input class="SliderBar" type="range" step="50000" min="200000" max="2200000" id='pesos' >
+                                                            </div>
                                                             <div class="d-flex">
                                                                 <p>$150.000</p>  
                                                                 <p>$1.000.000</p>  
@@ -116,11 +121,16 @@
                                                     </div>
                                                </div>
                                                <div>
-                                                   <p class="title-barra">Elija cuando pagarlo</p>
+                                                   <div class="d-flex align-items-center justify-content-between">
+                                                       <p class="title-barra">Elija cuando pagarlo</p>
+                                                       <p class="bold BoxPurple" id="CantidadCuotas">1 cuota de <br> <span id="MontoCuota">$ 000.000</span> </p>
+                                                   </div>
                                                    <div class="barra-dinero">
                                                 
-                                                    <input type="range" id='dias' max="32" >
-                                                    
+                                                    <!--input type="range" id='dias' max="32"-->
+                                                    <div class="slidecontainer">
+                                                                  <input class="SliderBar" type="range" step="50000" min="200000" max="2200000" id='dias' >
+                                                    </div>
                                                     <div>
 
                                                     </div>
@@ -133,20 +143,32 @@
                                                <img class="calendar-icon" src="assets/img/calendar-icon.svg" alt="calendar icon">
                                             </div>
                                            <div class="box-2">
-                                               <p class="bold">DETALLE DE CUOTAS</p>
+                                               
                                                <div class="datos-box">
                                                    <div class="d-flex">
-                                                       <p class="bold">Cantidad</p>
-                                                       <p class="bold datos-txt">7</p>
+                                                       <p class="bold">Valor solicitado</p>
+                                                       <p class="bold datos-txt">$00.000</p>
                                                    </div>
                                                    <div class="d-flex">
-                                                       <p class="bold">Valor</p>
-                                                       <p class="bold datos-txt" id="ValueBoxPesosDos">$00.000</p>
+                                                       <p class="bold">Interés</p>
+                                                       <p class="bold datos-txt" id="ValorMontoDos">$00.000</p>
                                                    </div>
                                                    <div class="d-flex">
-                                                       <p class="bold">Primer pago</p>
-                                                       <p class="bold datos-txt">10/07/2019</p>
+                                                       <p class="bold">Tecnología</p>
+                                                       <p class="bold datos-txt">$00.000</p>
                                                    </div>
+                                                   <div class="d-flex">
+                                                       <p class="bold">Administrativos</p>
+                                                       <p class="bold datos-txt">$00.000</p>
+                                                   </div>
+                                                   <div class="d-flex">
+                                                       <p class="bold">IVA</p>
+                                                       <p class="bold datos-txt" id="ValorMontoDos">$00.000</p>
+                                                   </div>
+                                                   <div class="d-flex">
+                                                       <p class="bold">Total a pagar</p>
+                                                       <p class="bold datos-txt" id="ValorMontoDos">$00.000</p>
+                                                   </div>                                                  
                                                </div>
                                             </div>
                                            <button class="green-btn" id="BtnPedirPrestamo" >Pedir Préstamo</button>
@@ -549,7 +571,6 @@ window.addEventListener('scroll', () => {
 BtnPedirPrestamo.addEventListener('click', () => {
     BtnScrollDown.style.display = 'none';
 });
-
 
 
 
