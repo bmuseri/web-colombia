@@ -24,7 +24,15 @@ body{
 #AnimationCel{
     z-index: 1;
 }
-
+.IframeSolicitarPrestamo{
+    width: 750px;
+    height: 500px;
+    margin: 0 auto;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+}
 #bm, #dos, #tres, #AnimationCel, #AnimationCelM, #dosM, #tresM {
     width: 95px;
     height: 95px;
@@ -34,11 +42,9 @@ body{
     box-shadow: 0px 0px 40px 0px #9f2fb324;
     overflow: hidden;
 }
-
 #AnimationCel svg, #AnimationCelM svg, #dosM svg, #tresM svg{
     border-radius: 50%!important
 }
-
 a {
     text-decoration: none;
 }
@@ -211,7 +217,7 @@ h2{
     width: 50%
 }
 .title-barra{
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     margin-top: 2em;
     color: #4c4c4c; 
 }
@@ -318,9 +324,9 @@ button{
 .white-box{
     background: #fff;
     border-radius: 25px;
-    max-width: 900px;
     margin-top: 2em;
-    margin-bottom: 2em
+    margin-bottom: 2em;
+    position: relative;
 }
 .box-white{
     background: #fff;
@@ -336,11 +342,16 @@ button{
     padding-top: 0;
 }
 .container-white-box{
-    padding: 2em 3em;
+    padding: 0 3em 2em 3em;
     position: relative;
 }
 .header-white-box{
     margin-bottom: 0.5em;
+    padding: 2em 3em;
+    -webkit-box-shadow: 1px 10px 10px -6px rgba(107,35,120,0.2);
+    -moz-box-shadow: 1px 10px 10px -6px rgba(107,35,120,0.2);
+    box-shadow: 1px 10px 10px -6px rgba(107,35,120,0.2);
+    margin-bottom: 1em;
 }
 
 .box-btns{
@@ -1210,7 +1221,7 @@ input:focus ~ .bar #Mje{
     position: absolute;
     width: 100%;
     text-align: center;
-    bottom: 50px;
+    bottom: 20px;
 }
 
 .scroll-down-container img{
@@ -2586,6 +2597,7 @@ select{
      box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.10);
      color: #6b2378;
  }
+
  @keyframes BtnCircleTransform{
  
     50%{
@@ -2597,7 +2609,7 @@ select{
       width: 258px;
       height: 40px;
       border-radius: 25px;
-      transform: translate(0,60px);
+      transform: translate(0,75px);
     }  
     
   }
@@ -2613,19 +2625,36 @@ select{
     width: 25px;
     margin-right: 0.7em
 }
- 
- .BoxPurple {
+.BoxPurple {
     background: #6b2378;
     color: white!important;
     border-radius: 7px;
     padding: 0.7em 0;
-    display: inline;
-    margin-bottom: 1.5em;
     font-size: 0.8em;
     font-family: 'montserratextralight'!important;
     width: 110px;
     text-align: center;
 }
+#PrimerPrestamo{
+    width: 100%!important;
+    padding-left: 1em;
+    padding-right: 1em;
+    top: 11px;
+    position: absolute;
+    box-sizing: border-box;
+    display: none;
+}
+.PrimerPrestamo p{
+    color: white
+}
+.box-elije-dinero{
+    width: 100%;
+    flex-wrap: wrap;
+}
+.ContainerEligeDinero{
+    position: relative;
+}
+
 
 /*
  * ───────────────────────────────────────────────────────────── RANGE SLIDER ─────
@@ -2812,7 +2841,7 @@ select{
         margin-top: 5em;
     }
     .elegi{
-        width: 60%;
+        width: 55%;
     }
     .box-contact .phone-number {
         margin-top: 0.5em;

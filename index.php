@@ -88,30 +88,31 @@
                        <h1>Préstamos rápidos <span>100% online</span> </h1>
                        <p class="subt-h1" > <img src="assets/img/check.svg" class="check-icono" alt="check icon"> Retire su dinero por cajero en menos de 24hs.</p>
            
-                       <div class="white-box margin-auto" id="boxwhite">
-           
-                           <div class="container-white-box" >
-
-                                   <div  class="btn-prestamo-destacado" id="BtnCircle">
+                       <!--div class="white-box margin-auto" id="boxwhite">
+                           <div class="header-white-box" ><p class="purple-txt bold" >Solicita tu préstamo</p></div>
+                           <div  class="btn-prestamo-destacado" id="BtnCircle">
                                        <div class="billetera-icon" id="BilleteraIcon"></div>
                                        <p>Préstamo destacado</p>
-                                   </div>
-                                   
-
-                                   <div class="header-white-box" ><p class="purple-txt bold" >Solicita tu préstamo</p></div>
-
+                            </div>
+                           <div class="container-white-box" >
+                                  
                                    <div class="d-flex box-white-box">
                                        <div class="elegi">
-                                               <div>
-                                                    <div class="d-flex align-items-center justify-content-between">
-                                                        <p class="title-barra">Elija tu dinero</p>
-                                                        <p class="bold BoxPurple" id="MontoDinero"></p>
+                                               <div>                                                 
+                                                    <div class="ContainerEligeDinero">  
+                                                        <div class="box-elije-dinero d-flex align-items-center justify-content-between" id="BoxElijeDinero" >
+                                                            <p class="title-barra" id="TitleBarra">Elija tu dinero</p>
+                                                            <p class="bold BoxPurple" id="MontoDinero"></p>
+                                                        </div>
+                                                        <div class="PrimerPrestamo BoxPurple d-flex justify-content-between align-items-center" id="PrimerPrestamo" >
+                                                                <p>Si es su promera vez, <br> <span class="bold" >puedes solicitar hasta</span> </p>
+                                                                <p>$ 600.000</p> 
+                                                        </div>
                                                     </div>
                                                     <div class="barra-dinero">
                                                         <div>
-                                                            <!--input type="range" step="50000" min="200000" max="2200000" id='pesos' -->
                                                             <div class="slidecontainer">
-                                                                  <input class="SliderBar" type="range" step="50000" min="200000" max="2200000" id='pesos' >
+                                                                  <input class="SliderBar" type="range" step="50000" min="150000" max="1000000" id='pesos' >
                                                             </div>
                                                             <div class="d-flex">
                                                                 <p>$150.000</p>  
@@ -127,8 +128,7 @@
                                                    </div>
                                                    <div class="barra-dinero">
                                                 
-                                                    <!--input type="range" id='dias' max="32"-->
-                                                    <div class="slidecontainer">
+                                                   <div class="slidecontainer">
                                                                   <input class="SliderBar" type="range" step="50000" min="200000" max="2200000" id='dias' >
                                                     </div>
                                                     <div>
@@ -177,6 +177,9 @@
 
                            </div>
 
+                       </div-->
+                       <div class="IframeSolicitarPrestamo">
+                            <iframe src="SolicitarPrestamo.html" frameborder="0"></iframe>
                        </div>
            
                    </div>
@@ -425,7 +428,7 @@
 
 <link rel="stylesheet" href="assets/css/swiper.min.css">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
-<script src="assets/js/rangeslider.min.js"></script>
+<!--script src="assets/js/rangeslider.min.js"></script-->
 <script src="assets/js/main.js" ></script>
 <script src="assets/js/swiper.min.js" ></script>
 <script src="assets/js/ventana-centro-ayuda.js"></script>
