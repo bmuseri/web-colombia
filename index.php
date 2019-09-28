@@ -10,7 +10,7 @@
     <!-- Start of  Zendesk Widget script -->
     <!--script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=3b237cb2-bff6-4c77-bfc2-7b7892881972"> </script-->
     <!-- End of  Zendesk Widget script -->
-    <title>Solventa</title>
+    <title>Solventa Colombia</title>
 
 </head>
 <body id='body' >
